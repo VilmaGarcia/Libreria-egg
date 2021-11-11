@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <link rel="stylesheet" th:href="@{/estiloIndex.css}"/>   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Librería</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+    
+          <div class="card" style="width: 9rem;">
+            <div class="card-body">
+              <h2 class="card-title"><a th:href="@{/}">Inicio</a></h2>
+              <h6 class="card-subtitle mb-2 text-muted">Librería</h6>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">AUTORES</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Opciones</h6>
+              <a class="card-link" th:href="@{/autores/todos}">Mostrar todos</a>
+              <a class="card-link" th:href="@{/autores/crear}">Crear autor</a>
+            </div>
+          </div>
+              
+              
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">EDITORIALES</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Opciones</h6>
+              <a class="card-link" th:href="@{/editoriales/todos}">Mostrar todas</a>
+              <a class="card-link" th:href="@{/editoriales/crear}">Crear editorial</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">LIBROS</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Opciones</h6>
+              <a class="card-link" th:href="@{/libros/todos}">Mostrar todos</a>
+              <a class="card-link" th:href="@{/libros/crear}">Crear libro</a>
+            </div>
+          </div>
+      
+        </nav>
+      
+      <div class="container mt-5 main">
+    <div class="row my-auto g-4 justify-content-evenly">
+        <div class="card col-lg-5 p-0 clickable-card">
+            <a class="text-decoration-none" th:href="@{/autores/todos}">
+                <div class="row g-0">
+                    <div class="col-md-4 index-autor"></div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Autores</h5>
+                            <p class="card-text">Acceda a la página de autores</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card col-lg-5 p-0 clickable-card">
+            <a class="text-decoration-none" th:href="@{/editoriales/todos}">
+                <div class="row g-0">
+                    <div class="col-md-4 index-mascota"></div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Editoriales</h5>
+                            <p class="card-text">Acceda a la página de editoriales</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+   
+      <div class="card col-lg-5 p-0 clickable-card">
+            <a class="text-decoration-none" th:href="@{/libros/todos}">
+                <div class="row g-0">
+                    <div class="col-md-4 index-mascota"></div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Libros</h5>
+                            <p class="card-text">Acceda a la página de libros</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+       
+
+      
+
+  </body>
+</html>

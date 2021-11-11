@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>    
+    <nav th:fragmento="navbar" class="navbar navbar-dark bg-dark">
+
+        <div class="card" style="width: 9rem;">
+          <div class="card-body">
+            <h2 class="card-title"><a th:href="@{/}">Inicio</a></h2>
+            <h6 class="card-subtitle mb-2 text-muted">Librería</h6>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">AUTORES</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Opciones</h6>
+            <a class="card-link" th:href="@{/autores}">Mostrar todos</a>
+            <a class="card-link" th:href="@{/autores/crear}">Crear autor</a>
+
+            
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">EDITORIALES</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Opciones</h6>
+            <a class="card-link" th:href="@{/editoriales}">Mostrar todas</a>
+            <a class="card-link" th:href="@{/editoriales/crear}">Crear editorial</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">LIBROS</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Opciones</h6>
+            <a class="card-link" th:href="@{/libros}">Mostrar todos</a>
+            <a class="card-link" th:href="@{/libros/crear}">Crear libro</a>
+          </div>
+        </div>
+    
+      </nav>
+</body>
+</html>

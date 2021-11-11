@@ -1,0 +1,13 @@
+com\example\libreria\entidades\Autor.class
+com\example\libreria\controladores\EditorialControlador.class
+com\example\libreria\entidades\Editorial.class
+com\example\libreria\entidades\Libro.class
+com\example\libreria\repositorio\EditorialRepositorio.class
+com\example\libreria\DemoApplication.class
+com\example\libreria\repositorio\LibroRepositorio.class
+com\example\libreria\servicios\LibroServicio.class
+com\example\libreria\repositorio\AutorRepositorio.class
+com\example\libreria\controladores\LibroControlador.class
+com\example\libreria\servicios\EditorialServicio.class
+com\example\libreria\controladores\AutorControlador.class
+com\example\libreria\servicios\AutorServicio.class
